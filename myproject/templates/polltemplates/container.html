@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+#container {
+
+	border:thick dashed #F00;
+	background-color:#FF9;
+	width: {{ attr.width }}px;
+	height: {{ attr.height }}px;
+	
+
+}
+
+</style>
+
+</head>
+{% comment %} 
+
+VERSION 1 This file has certain tags that will be populated with variables by Django 
+The current version of the file is faily static It just creates a div based on the dimensions fed in 
+
+
+Has access to IP:ip, COUNTRY:country, DOMAIN: domain, SUB DOMAIN:subdomain, NICHE:niche, URL:url, USER ID :user_id
+Also has access to ad container url:tag
+{% endcomment %}
+<body>
+<div id = container class="tb_adcontainer">
+THIS {{message}} AD HAS BEEN REPLACED<br />
+<div id = ad> Sample ad here </div>
+</div>
+
+</body>
+</html>
